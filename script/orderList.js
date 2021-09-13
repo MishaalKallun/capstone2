@@ -4,7 +4,7 @@ let token = localStorage.getItem("token");
 let isAdmin = localStorage.getItem("token-isAdmin") === "true";
 
 
-fetch ("http://localhost:3000/api/orders/allOrders",{
+fetch ("https://murmuring-atoll-05490.herokuapp.com/api/orders/allOrders",{
 	method: "GET",
 	headers: {
 			"Content-Type": "application/json",

@@ -11,7 +11,7 @@ editProduct.addEventListener('submit', (e) => {
 	let token = localStorage.getItem("token");
 	let productId = params.get('productId')
 
-		fetch(`http://localhost:3000/api/products/${productId}/edit`,
+		fetch(`https://murmuring-atoll-05490.herokuapp.com/api/products/${productId}/edit`,
 			{
 				method: "PUT",
 				headers: {

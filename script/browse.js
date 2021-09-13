@@ -6,7 +6,7 @@ let token = localStorage.getItem("token");
 let productId = params.get('productId')
 
 if (isAdmin === true){
-	fetch ("http://localhost:3000/api/products/inactive",{
+	fetch ("https://murmuring-atoll-05490.herokuapp.com/api/products/inactive",{
 	method: "GET",
 	})	
 	.then (result => result.json())
@@ -104,7 +104,7 @@ if (isAdmin === true){
 }
 else {
 
-	fetch ("http://localhost:3000/api/products/inactive",{
+	fetch ("https://murmuring-atoll-05490.herokuapp.com/api/products/inactive",{
 		method: "GET",
 		
 	})
@@ -205,7 +205,7 @@ else {
 
 	let qty = document.getElementById('qty')
 
-	fetch(`http://localhost:3000/api/orders/${productId}/request`,
+	fetch(`https://murmuring-atoll-05490.herokuapp.com/api/orders/${productId}/request`,
 	{
 		method : "PUT",	
 		headers: {

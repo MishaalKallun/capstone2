@@ -13,7 +13,7 @@ registerForm.addEventListener('submit', (e) => {
 
 		if( password === password2 && password !== "" && password2 !==""){
 
-			fetch("http://localhost:3000/api/users/checkEmail", {
+			fetch("https://murmuring-atoll-05490.herokuapp.com/api/users/checkEmail", {
 
 				method: "POST",
 				headers :{
@@ -27,7 +27,7 @@ registerForm.addEventListener('submit', (e) => {
 			.then( result => {
 
 				if(result === false){
-					fetch("http://localhost:3000/api/users/register",{
+					fetch("https://murmuring-atoll-05490.herokuapp.com/api/users/register",{
 						method: "POST",
 						headers: {
 							"Content-Type":"Application/json"

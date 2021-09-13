@@ -9,7 +9,7 @@ makeRevoke.addEventListener('submit', (e) => {
 	acctId = document.getElementById('acctId').value;
 	token = localStorage.getItem("token");
 
-	fetch(`http://localhost:3000/api/users/setAdmin/${acctId}`, {
+	fetch(`https://murmuring-atoll-05490.herokuapp.com/api/users/setAdmin/${acctId}`, {
 		
 		method: "GET",
 		headers :{
@@ -32,7 +32,7 @@ makeRevoke.addEventListener('reset', (e) => {
 	acctId = document.getElementById('acctId').value;
 	token = localStorage.getItem("token");
 
-	fetch(`http://localhost:3000/api/users/setNotAdmin/${acctId}`, {
+	fetch(`https://murmuring-atoll-05490.herokuapp.com/api/users/setNotAdmin/${acctId}`, {
 		
 		method: "GET",
 		headers :{
@@ -59,7 +59,7 @@ newProduct.addEventListener('submit', (e) => {
 
 	token = localStorage.getItem("token");
 
-	fetch ("http://localhost:3000/api/users/details",{
+	fetch ("https://murmuring-atoll-05490.herokuapp.com/api/users/details",{
 		method: "GET",
 		headers: {
 			"Authorization": `bearer ${token}`
@@ -68,7 +68,7 @@ newProduct.addEventListener('submit', (e) => {
 	})
 	.then( result => result.json())
 	.then (result => {
-		fetch(`http://localhost:3000/api/products/addProduct`, {
+		fetch(`https://murmuring-atoll-05490.herokuapp.com/api/products/addProduct`, {
 				
 			method: "POST",
 			headers :{
@@ -98,7 +98,7 @@ restock.addEventListener('submit', (e) => {
 	qty = document.getElementById('qty').value;
 	token = localStorage.getItem("token");
 
-	fetch(`http://localhost:3000/api/products/${pId}/restock`, {
+	fetch(`https://murmuring-atoll-05490.herokuapp.com/api/products/${pId}/restock`, {
 		
 		method: "PUT",
 		headers :{

@@ -2,7 +2,7 @@ let params = new URLSearchParams(window.location.search);
 let token = localStorage.getItem("token");
 let productId = params.get('productId')
 
-fetch(`http://localhost:3000/api/products/${productId}`,
+fetch(`https://murmuring-atoll-05490.herokuapp.com/api/products/${productId}`,
 	{
 		method : "GET",
 		headers : {	
@@ -13,7 +13,7 @@ fetch(`http://localhost:3000/api/products/${productId}`,
 .then(result => result.json())
 .then( result => {
 	console.log(productId)
-	fetch('http://localhost:3000/api/users/purchaseFromCart',
+	fetch('https://murmuring-atoll-05490.herokuapp.com/api/users/purchaseFromCart',
 	{
 		method : "POST",	
 		headers: {

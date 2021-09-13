@@ -78,7 +78,7 @@ loginUser.addEventListener('submit', (e) => {
 		alert (`please input required field`)
 	}
 	else {
-		fetch("http://localhost:3000/api/users/login", {
+		fetch("https://murmuring-atoll-05490.herokuapp.com/api/users/login", {
 		    method: "post",
 		    headers: { "Content-Type": "application/json" },
 		    body: JSON.stringify({ 
@@ -91,7 +91,7 @@ loginUser.addEventListener('submit', (e) => {
 
 			localStorage.setItem("token", result.access);
 			if(result.access){
-				fetch("http://localhost:3000/api/users/details", {
+				fetch("https://murmuring-atoll-05490.herokuapp.com/api/users/details", {
 					method: "GET",
 					headers: {
 						"Authorization": `bearer ${result.access}`
@@ -120,7 +120,7 @@ loginUser.addEventListener('submit', (e) => {
 
 
 if (isAdmin === true){
-	fetch ("http://localhost:3000/api/products/all",{
+	fetch ("https://murmuring-atoll-05490.herokuapp.com/api/products/all",{
 	method: "GET",
 	})	
 	.then (result => result.json())
@@ -223,7 +223,7 @@ if (isAdmin === true){
 }
 else {
 
-	fetch ("http://localhost:3000/api/products/active",{
+	fetch ("https://murmuring-atoll-05490.herokuapp.com/api/products/active",{
 		method: "GET",
 		
 	})

@@ -1,4 +1,4 @@
-fetch(`http://localhost:3000/api/orders/${productId}/request`,
+fetch(`https://murmuring-atoll-05490.herokuapp.com/api/orders/${productId}/request`,
 	{
 		method : "PUT",	
 		headers: {

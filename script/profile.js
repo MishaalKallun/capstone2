@@ -9,7 +9,7 @@ let address = document.getElementById('address');
 let total = document.getElementById('total')
 
 
-fetch ("http://localhost:3000/api/orders/myOrders",{
+fetch ("https://murmuring-atoll-05490.herokuapp.com/api/orders/myOrders",{
 	method: "GET",
 	headers: {
 		"Authorization": `bearer ${token}`
@@ -55,7 +55,7 @@ fetch ("http://localhost:3000/api/orders/myOrders",{
 })
 
 
-fetch ("http://localhost:3000/api/orders/purchaseHistory",{
+fetch ("https://murmuring-atoll-05490.herokuapp.com/api/orders/purchaseHistory",{
 	method: "GET",
 	headers: {
 		"Authorization": `bearer ${token}`
@@ -102,7 +102,7 @@ fetch ("http://localhost:3000/api/orders/purchaseHistory",{
 
 
 
-fetch(`http://localhost:3000/api/users/details`,
+fetch(`https://murmuring-atoll-05490.herokuapp.com/api/users/details`,
 	{
 		method : "GET",
 		headers : {	
@@ -129,7 +129,7 @@ fetch(`http://localhost:3000/api/users/details`,
 })
 
 
-fetch(`http://localhost:3000/api/users/cartTotal`,
+fetch(`https://murmuring-atoll-05490.herokuapp.com/api/users/cartTotal`,
 	{
 		method : "GET",
 		headers : {	
