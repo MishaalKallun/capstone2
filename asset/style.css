@@ -1,0 +1,32 @@
+body {
+	background-image: url("./images/Background.png");
+	font-family: 'Patrick Hand', cursive;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.navbar{
+	font-weight: 500;
+	font-size: 28px;
+
+}
+
+
+.card {
+	color: white;
+	text-shadow: 2px 2px 2px #000000;
+    box-shadow: 0 0 5px 0 ;
+    background: inherit;
+    backdrop-filter: blur(10px);
+}
+
+/*
+font-family: 'Patrick Hand', cursive;
+
+font-family: 'Patrick Hand SC', cursive;
+*/
+
+
+.jumbotron {
+    background: none
+}

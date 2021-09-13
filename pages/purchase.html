@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+		<!-- Patrick Hand -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+		<!-- Patrick Hand SC -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+
+		<!-- style.css -->
+		<link rel="stylesheet" type="text/css" href="./../asset/style.css">
+
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Content Here -->
+
+		<!-- JUMBOTRON -->
+		<div class="jumbotron jumbotron-fluid">
+		  <div class="container">
+		    
+		  </div>
+		</div>
+		<!-- JUMBOTRON -->
+
+		<!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		  	<span id="User" class="text-white"></span>
+		    <div class="navbar-nav ml-auto">
+		      <a class="nav-item nav-link active text-white" href="./index.html">Home <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link text-white" href="./browse.html">Browse</a>
+		      <span id="loginBtn"></span>    <!-- LOGIN BTN -->
+		      <span id="registerBtn"></span> <!-- REGISTER BTN -->
+		      <span id="profileBtn"></span>  <!-- PROFILE BTN -->
+		      <span id="logoutBtn"></span>	 <!-- LOGOUT BTN -->
+		    </div>
+		  </div>
+		</nav>
+		<!-- NAVBAR -->
+
+		<div class="container">
+			<div class="row" id="adminButton">
+				
+			</div>
+			<div class="row" id="productCatalogue">
+				<div class="col-12">
+					<section class="jumbotron text-center my-5">
+						<h1>
+							<span class="spinner-border text-primary"></span>
+							Loading
+						</h1>
+					</section>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- FOOTER -->
+		<footer class="footer bg-dark fixed-bottom">
+			<p class="p-3 mb-0 text-center text-white"> LaFenice' Apothecary | Mishaal Kallun &copy; 2021</p>
+		</footer>
+		<!-- FOOTER -->
+
+		<!-- MODAL -->
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content bg-dark">
+		      <div class="modal-header">
+		        <h5 class="modal-title text-white" id="exampleModalLabel">Login</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <form id="loginUser">
+		          <div class="form-group">
+		            <label for="email" class="text-white">Email address</label>
+		            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+		          </div>
+
+		          <div class="form-group">
+		            <label for="password" class="text-white">Password</label>
+		            <input type="password" class="form-control" id="password" placeholder="Password">
+		          </div>
+
+		          <button type="submit" class="btn btn-dark float-right">Submit</button>
+		        </form>
+		      </div>
+		      <div class="modal-footer">
+		      	
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+
+		<!-- MODAL -->
+
+		<!-- Bootsrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+		<script src="./../script/script.js"></script>
+        <script src="./../script/purchase.js"></script>
+	</body>
+</html>
+
+
+
